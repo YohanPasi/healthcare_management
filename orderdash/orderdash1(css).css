@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+:root {
+    --main-color: #ff9f0d;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #9e9e9e;
+    --bg-color: #111111;
+    --bg-font: 3.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1rem;
+    
+}
+
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background: transparent;  
+    /* padding: 0 30px;  */
+    transition: all .50s ease;
+    color: rgb(235, 235, 243);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 50px;
+}
+
+.logo i {
+    vertical-align: middle;
+    margin-right: 20px;
+    color: var(--main-color);
+}
+
+.logo img {
+    height: 4rem;
+}
+
+.navlist {
+    display:flex;
+    
+}
+
+.navlist a {
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: all .50s ease;
+    color:rgb(0, 0, 0);
+   margin-right: 40px; 
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.navlist a.active {
+    color:rgb(22, 22, 224);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow: #ff9f0d 0px 1px 25px;
+}
+
+#menu-icon {
+    font-size: 32px;
+    color: aqua;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+body{
+    background-image: url("back2.jpg");  
+    height: 100vh;
+    line-height: 1.5; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size:126%;
+}
+.topic{
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.table{
+    width: 100%;
+    margin-top: 10%;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    /* margin-right: 35px; */
+    align-items: center;
+    text-align: center;
+    /* border-collapse: collapse; */
+    
+  }
+  
+
+tbody{
+    font-size: 14px;
+  }
+  
+  td{
+    vertical-align: middle;
+    color: #000000;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.5) ;
+  }
+  
+  td a{
+    margin-right: 5px;
+  }
+  
+  th, td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+  }
+  
+  th{
+    background-color: rgba(0, 0, 0, 0.4); 
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    font-size: 1.7em;
+  
+  }
+  
+  tr:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  form{
+    margin-bottom: 20px;
+  }

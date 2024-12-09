@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --main-color: #ff9f0d;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #9e9e9e;
+    --bg-color: #111111;
+    --bg-font: 3.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+    
+}
+
+body{
+    background-image: url("med2.jpg");
+    background-size: 100%; 
+    width:100%;
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 100;  
+    position: relative;  
+}
+
+/* HEADER */
+
+
+header {
+    width: 103%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center; 
+    /* justify-content: space-between; */
+    /* padding-left: 20%; */
+    transition: all .50s ease;
+    background-color: #111;
+   
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 33px;
+}
+
+.logo i {
+    /* vertical-align: middle; */
+    /* margin-right: 8px; */
+    color: var(--main-color);
+}
+
+.logo img {
+    height: 4rem;
+}
+
+.navlist {
+    display: flex;
+   
+}
+
+
+.navlist a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 300;
+    /* margin: 0 100px; */
+    transition: all .50s ease;
+    margin-right: 50px;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.navlist a.active {
+    color: var(--main-color);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow: #ff9f0d 0px 1px 25px;
+}
+
+#menu-icon {
+    font-size: 32px;
+    color: var(--bg-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+/* HEADER */
+
+.container{
+    
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 6px;
+    background: rgba(252, 248, 248, 0.3);
+    padding: 30px;
+    box-shadow: #080606;
+    margin: 15px 10%;
+    box-shadow: inset -2px 2px 2px white;
+    align-items:center;
+    margin-top: 5%;
+}
+
+.container header2{
+    position: relative;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(5, 5, 5);
+    text-shadow: 2px 2px 2px rgb(247, 237, 237);
+    border-bottom: solid 1px rgb(3, 3, 3);
+    margin-bottom: 20px;
+}
+
+.container form .title{
+    display: block;
+    font-weight: 650;
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+.container form .field1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+     grid-gap: 20px; 
+}
+
+.container form .field2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 20px; 
+}
+
+.container form .field1 .form-details{
+    display: flex;
+    width: calc(100%3 -15px);
+    flex-direction:column;
+    margin: 4px 0;
+}
+
+.container form .field2 .form-details{
+    display: flex;
+    width: calc(100%3 -15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.container form .field1 .form-details .label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.container form .field2 .form-details .label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.container form .field1 .form-details .dropdown {
+    height: 42px;
+    border-radius: 10px;
+    margin: 8px 0;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #AAAA;
+}
+
+.container form .field2 .form-details .dropdown{
+    height: 42px;
+    border-radius: 10px;
+    margin: 8px 0;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #AAAA;
+}
+
+.container form .field1 .form-details input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #AAAA;
+    padding: 0 15px;
+    height: 42px;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.container form .field2 .form-details input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #AAAA;
+    padding: 0 15px;
+    height: 42px;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.container form .field1 .form-details textarea{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 15px;
+    height: 42px;
+    border-radius: 10px;
+    margin: 8px 0;
+    border: 1px solid #AAAA;
+    color: #333;
+}
+
+.container form .field1 .form-details .dropdown:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.container form .field2 .form-details .dropdown:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.container form .field1 .form-details input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.container form .field2 .form-details input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.container form .field1 .form-details input[type="date"]:valid{
+    color: #333;
+}
+
+.container form .field2 .form-details input[type="date"]:valid{
+    color: #333;
+}
+
+.container form button{
+    font-size: 18px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    background:blueviolet;
+    border-radius: 20px;
+    border: none;
+    padding: 6px 16px;
+    outline: none;
+    padding-right: 20px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.container form button:hover{
+    color:white;
+}
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    padding: 0px 30;
+    position: relative; 
+    margin-top: 5%;
+    width: 103%;
+
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a,
+.payment-icons i {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.social-icons a:last-child,
+.payment-icons i:last-child {
+    margin-right: 0;
+}
+
